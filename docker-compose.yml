@@ -1,0 +1,7 @@
+services:
+  whatsapp-sender:
+    build: .
+    env_file:
+      - .env
+    # Override command for production (remove --teste)
+    # command: ["--limite", "3"]
